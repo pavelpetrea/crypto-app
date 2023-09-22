@@ -1,0 +1,113 @@
+@media (max-width: 768px) {
+.crypto-chart {
+  width: 500px;
+  height: 500px;
+  margin-left: -140px;
+}
+.top-gainers,
+.top-losers {
+  width: calc(50% +_ 10px); 
+  padding: 10px;
+}
+
+.top-gainers :hover {
+    color: #15b81d;
+}
+.top-losers :hover {
+  color: #cf1818;
+}
+.crypto-chartss {
+  text-align: center; 
+  font-size: x-small;
+  margin-left: 145px;
+  margin-top: -65px; 
+}
+.top-crypto-list {
+  display: flex; 
+  justify-content: space-between; 
+  margin-top: 20px; 
+}
+  canvas {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+    margin-left: 128px;
+  }
+  .inputs select,
+  .buttons button {
+    appearance: none;
+    background-color: #ffffff;
+    padding: 10px;
+    width: auto;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    margin-left: 7px;
+  }
+  th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+  }
+
+  .buttons button {
+    background-color: transparent;
+    border: none; 
+    padding: 1px;
+    font-size: 16px;
+    border: 0.5px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    margin-right: 10px;
+    margin-top: -110px;
+  }
+  
+  .buttons button:hover {
+    border-color: #cfcfcf; 
+  }
+  @media only screen and (orientation: landscape) {
+    .crypto-chartss {
+      padding: 20px;
+      margin-top: -109px;
+      font-size: x-small;
+      margin-left: 55px;
+    }
+    canvas {
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+      width: 490px;
+      height: 650px;
+      margin-top: 10px;
+      margin-left: 223px;
+    }
+    footer {
+      font-size: x-small;
+      margin-top: -180px;
+    }
+    }
+  footer {
+    font-size: x-small;
+    margin-top: 20px;
+  }
+}

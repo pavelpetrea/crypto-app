@@ -11,10 +11,7 @@ export default function BasicSelect() {
   const handleChange = (event) => {
     setCurrency(event.target.value);
   };
-
-  
   return (
-  
     <div className='SelectCurrency'>
     <Box sx={{ minWidth: 120 }} >
       <FormControl fullWidth>
@@ -26,11 +23,9 @@ export default function BasicSelect() {
           onChange={handleChange}
         >
           <MenuItem value={"USD"}>USD $</MenuItem>
-          
         </Select>
       </FormControl>
     </Box>
     </div>
-   
   );
 }

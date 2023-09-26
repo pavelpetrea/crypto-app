@@ -6,13 +6,15 @@ import Chart from 'chart.js/auto';
 import { FormControl, MenuItem, Select } from '@mui/material';
 import { InputLabel } from '@mui/material';
 import Box from '@mui/material/Box';
+import DropDownCurrency from './SelectCurrency';
 
 const CryptoChart = () => {
+  const [selectedCurrency, setSelectedCurrency] = useState('USD'); // Inițializează cu valoarea implicită
   const [cryptoList, setCryptoList] = useState([]);
   const [selectedCrypto, setSelectedCrypto] = useState('');
   const [selectedInterval, setSelectedInterval] = useState('1d');
   const [chartData, setChartData] = useState({});
-  const [showChart, setShowChart] = useState(false); 
+  const [showChart, setShowChart] = useState(false);
   const chartRef = useRef(null);
 
   useEffect(() => {
